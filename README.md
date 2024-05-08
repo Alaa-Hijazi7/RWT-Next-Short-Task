@@ -71,13 +71,3 @@ Make sure you have Node.js and npm installed on your system.
 3. **Session Expiration**: The session will expire after 1 hour of inactivity.
 4. **Single Page Application**: The application follows a single-page architecture using Next.js routing.
 5. **Codebase**: TypeScript is used for the codebase, and ESLint is configured for linting.
-
-## Contact
-
-If you have any questions or need assistance, feel free to reach out to us at [example@example.com](mailto:example@example.com).
-
-Happy coding!
-
----
-
-Feel free to adjust any details according to your project's specifics!
