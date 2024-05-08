@@ -1,0 +1,22 @@
+{
+  "printWidth": 150,
+  "tabWidth": 2,
+
+  "endOfLine": "lf",
+
+  "proseWrap": "always",
+  "arrowParens": "avoid",
+  "trailingComma": "all",
+  "htmlWhitespaceSensitivity": "css",
+
+  "semi": false,
+  "useTabs": false,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "bracketSpacing": true,
+  "rules": {
+
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off" 
+  }
+}

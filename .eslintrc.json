@@ -1,3 +1,89 @@
+// 2 means error
+// 1 means warn
+// 0 means off
+
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "node": true
+  },
+  "plugins": ["better-styled-components", "@typescript-eslint", "autofix", "@typescript-eslint", "react-hooks"],
+  "extends": ["eslint:recommended", "next/core-web-vitals", "plugin:@typescript-eslint/recommended", "prettier", "next"],
+
+  "rules": {
+    "prefer-const": 2,
+    "react/display-name": 0,
+    "quotes": [2, "single"],
+    "import/no-duplicates": 2,
+    "semi": [2, "never"],
+    "react/no-children-prop": 0,
+    "@next/next/no-img-element": 2,
+    "react/no-unescaped-entities": 0,
+    "react-hooks/exhaustive-deps": 1,
+    "react-hooks/rules-of-hooks": 2,
+    "@typescript-eslint/ban-ts-comment": 1,
+    "@typescript-eslint/no-empty-function": 1,
+    "arrow-body-style": [2, "as-needed"],
+    "@typescript-eslint/no-non-null-assertion": 1,
+    "no-console": [2, { "allow": ["warn", "error"] }],
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "no-trailing-spaces": [1, { "skipBlankLines": false }],
+    "no-multiple-empty-lines": [2, { "max": 1, "maxEOF": 0 }],
+    "better-styled-components/sort-declarations-alphabetically": 2,
+    "@typescript-eslint/no-explicit-any": [1, { "ignoreRestArgs": true }],
+    "import/no-useless-path-segments": [
+      2,
+      {
+        "noUselessIndex": true
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      1,
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "react/self-closing-comp": [
+      2,
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "autofix/no-unused-vars": [
+      2,
+      {
+        "argsIgnorePattern": "^_",
+        "ignoreRestSiblings": true,
+        "destructuredArrayIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": [
+      2,
+      {
+        "prefer": "type-imports"
+      }
+    ],
+    "import/order": [
+      2,
+      {
+        "groups": ["builtin", "external", "parent", "sibling", "index", "object", "type"],
+        "pathGroups": [
+          {
+            "pattern": "@/**/**",
+            "group": "parent",
+            "position": "before"
+          }
+        ],
+        "alphabetize": { "order": "asc" }
+      }
+    ],
+    "no-restricted-imports": [
+      2,
+      {
+        "patterns": ["../../"]
+      }
+    ]
+    // Suppress "no-misused-new" error
+  }
 }
